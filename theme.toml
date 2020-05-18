@@ -1,0 +1,12 @@
+name = "0xC0ncord"
+license = "MIT"
+licenselink = "https://github.com/0xC0ncord/hugo-concord-theme/blob/master/LICENSE"
+description = "A minimal theme made for https://concord.sh/"
+homepage = "https://concord.sh/"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "0xC0ncord"
+  homepage = "https://concord.sh/"

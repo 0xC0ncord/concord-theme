@@ -1,0 +1,18 @@
+<div>
+    <h1>./concord.sh</h1>
+    <h3 class="subtitle" id="subtitle"></h3>
+
+    {{ $subtitle_js := resources.Get "js/subtitle.js" | minify }}
+    <script src="{{ $subtitle_js.Permalink }}"></script>
+</div>
+<div class="nav">
+    {{ range (where .Site.Pages.ByWeight ".Type" "page") }}
+        {{ if eq $.File .File }}
+            <a class="tty" href="#">
+        {{ else }}
+            <a class="tty" href="{{ .Permalink }}">
+        {{ end }}
+            <p>{{ upper .Title }}</p>
+        </a>
+    {{ end }}
+</div>
