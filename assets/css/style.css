@@ -231,7 +231,7 @@ a:hover > .post-title {
     justify-content: space-between;
 }
 
-.list-tags, .post-tags {
+.list-categories, .list-tags, .post-categories, .post-tags {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -239,11 +239,11 @@ a:hover > .post-title {
     flex-wrap: wrap;
 }
 
-.list-tags > li {
+.list-categories > li, .list-tags > li {
     margin: 0 4px 8px 0;
 }
 
-.list-tags > li > a, .post-tags > li > a {
+.list-categories > li > a, .list-tags > li > a, .post-categories > li > a, .post-tags > li > a {
     padding: 2px 3px;
     color: #eee;
     background-color: #555;
@@ -251,17 +251,30 @@ a:hover > .post-title {
     transition: color 0.2s, background-color 0.2s;
 }
 
-.list-tags > li > a:hover, .post-tags > li > a:hover {
+.list-categories > li > a:hover, .list-tags > li > a:hover, .post-categories > li > a:hover, .post-tags > li > a:hover {
     color: #fff;
     background-color: #666;
     text-shadow: none;
 }
 
-.post-tags > li {
+.list-categories > li > a, .post-categories > li > a {
+    background-color: #357;
+}
+
+.list-categories > li > a:hover, .post-categories > li > a:hover {
+    background-color: #468;
+}
+
+.post-categories > li, .post-tags > li {
     margin: 0 4px 4px 0;
 }
 
+.post-categories {
+    margin-bottom: 4px;
+}
+
 .post-date {
+    margin-top: auto;
     color: #edffff;
 }
 
