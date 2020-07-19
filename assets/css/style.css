@@ -282,6 +282,18 @@ a:hover > .post-title {
     margin-top: 24px;
 }
 
+.highlight > pre {
+    padding: 16px;
+    border: #fff2 solid 1px;
+}
+
+code {
+    max-height: 400px;
+    max-width: 100%;
+    display: block;
+    overflow: auto;
+}
+
 @keyframes cursorfade {
     from, to { border-color: transparent; }
     50% { border-color: #5dcff4; }
