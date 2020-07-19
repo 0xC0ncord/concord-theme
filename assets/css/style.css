@@ -5,6 +5,11 @@ body {
     font-family: "Open Sans";
 }
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #2c6577 #444;
+}
+
 h1 {
     font-family: "Terminus";
     font-size: 48px;
