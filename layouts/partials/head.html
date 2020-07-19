@@ -3,8 +3,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Site.Title }} :: {{ .Title }}</title>
 
-    {{ $css := resources.Get "css/style.css" | minify }}
-    <link rel="stylesheet" href="{{ $css.Permalink }}">
+    {{ $css_main := resources.Get "css/style.css" | minify }}
+    <link rel="stylesheet" href="{{ $css_main.Permalink }}">
+
+    {{ $css_terminus := resources.Get "css/terminus.css" | minify }}
+    <link rel="stylesheet" href="{{ $css_terminus.Permalink }}">
+
+    {{ $css_opensans := resources.Get "css/open-sans.css" | minify }}
+    <link rel="stylesheet" href="{{ $css_opensans.Permalink }}">
 
     <link rel="icon" type="image/png" href="/favicon.png">
 </head>

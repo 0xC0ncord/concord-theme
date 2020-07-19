@@ -1,13 +1,8 @@
-@font-face {
-    font-family: "Terminus";
-    src: url("/fonts/Terminus.woff") format("woff");
-}
-
 body {
     max-width: 900px;
     background-color: #0f0f12;
     margin: 60px auto 12px;
-    font-family: "Tahoma, Geneva", sans-serif;
+    font-family: "Open Sans";
 }
 
 h1 {
@@ -82,7 +77,8 @@ hr {
     border: solid 1px #aaa;
 }
 .nav > a > p {
-    font-family: monospace;
+    font-family: "Terminus";
+    font-weight: bold;
     font-size: 14px;
     text-align: center;
     color: #f2f7ff;
