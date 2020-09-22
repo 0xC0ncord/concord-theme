@@ -295,8 +295,18 @@ a:hover > .post-title {
 code {
     max-height: 400px;
     max-width: 100%;
-    display: block;
+    display: inline;
     overflow: auto;
+    background-color: #121212;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.highlight > pre > code {
+    display: inline-block;
+    background-color: inherit;
+    border-radius: 0;
+    padding: 0;
 }
 
 @keyframes cursorfade {
