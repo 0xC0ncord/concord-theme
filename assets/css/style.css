@@ -10,6 +10,26 @@ body {
     scrollbar-color: #2c6577 #444;
 }
 
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:window-inactive {
+    background: #2e6577 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer !important;
+    -webkit-transition: color .2s ease !important;
+    transition: color .2s ease !important;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0 !important;
+    background: #444 !important;
+}
+
 h1 {
     font-family: "Terminus";
     font-size: 48px;
