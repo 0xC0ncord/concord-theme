@@ -327,6 +327,7 @@ code {
     background-color: inherit;
     border-radius: 0;
     padding: 0;
+    vertical-align: middle;
 }
 
 @keyframes cursorfade {
