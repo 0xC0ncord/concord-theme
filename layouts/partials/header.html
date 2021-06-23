@@ -1,7 +1,6 @@
 <div>
     <h1>./concord.sh</h1>
-    <h3 class="subtitle" id="subtitle"></h3>
-
+    <h3 class="subtitle" id="subtitle">JavaScript disabled edition.</h3>
     {{ $subtitle_js := resources.Get "js/subtitle.js" | minify }}
     <script src="{{ $subtitle_js.Permalink }}"></script>
 </div>
