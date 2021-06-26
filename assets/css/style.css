@@ -40,7 +40,7 @@ h1 {
     text-align: center;
     border-right-width: 4px;
     border-right-style: solid;
-    animation: cursorfade 1s infinite;
+    animation: cursorfadeslow 1s infinite;
 }
 
 h3 {
@@ -111,6 +111,16 @@ hr {
     text-align: center;
     color: #f2f7ff;
     margin: 0 auto;
+}
+.tty:hover > p::after {
+    content: " ";
+    white-space: pre;
+    position: absolute;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-color: transparent;
+    animation: cursorfadefast 0.2s infinite;
+    animation-delay: 0.2s;
 }
 .nav > a:hover {
     color: #f2f7ff;
@@ -330,9 +340,14 @@ code {
     vertical-align: middle;
 }
 
-@keyframes cursorfade {
+@keyframes cursorfadeslow {
     from, to { border-color: transparent; }
     50% { border-color: #5dcff4; }
+}
+
+@keyframes cursorfadefast {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
 }
 
 @keyframes typing {
