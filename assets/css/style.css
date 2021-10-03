@@ -39,6 +39,10 @@ body {
     background: #444 !important;
 }
 
+::-webkit-scrollbar-corner {
+    background: #666 !important;
+}
+
 .title {
     font-family: "Terminus";
     font-size: 3em;
