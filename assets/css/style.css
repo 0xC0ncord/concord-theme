@@ -263,6 +263,9 @@ hr {
 
 .footnotes {
     color: var(--white);
+}
+
+.footnotes > ol {
     overflow-x: auto;
 }
 
