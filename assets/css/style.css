@@ -392,3 +392,31 @@ code {
     from { opacity: 0 }
     to { opacity: 1 }
 }
+
+.notice, .notice-title {
+    border-radius: 0!important;
+}
+
+.notice.note, .notice.info, .notice.tip, .notice.warning {
+    background: #2e2e2e!important;
+}
+
+.notice-title ~ p {
+    color: #ddd!important;
+}
+
+.notice.note {
+    border: 1px solid #6ab0de!important;
+}
+
+.notice.info {
+    border: 1px solid #f0b37e!important;
+}
+
+.notice.tip {
+    border: 1px solid rgba(92,184,92,.8)!important;
+}
+
+.notice.warning {
+    border: 1px solid rgba(217,83,79,.9)!important;
+}
