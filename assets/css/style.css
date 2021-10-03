@@ -263,7 +263,7 @@ ul > a > li::marker {
 }
 
 .code {
-    background-color: #0d0d0d;
+    background-color: #444;
     border-radius: 4px;
     padding: 2px;
 }
