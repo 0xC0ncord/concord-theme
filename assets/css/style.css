@@ -4,7 +4,6 @@
 }
 
 body {
-    width: 100vw;
     overflow-x: hidden;
     background-color: #0f0f12;
     font-family: "Open Sans";
@@ -141,7 +140,7 @@ hr {
     animation: typing 0.3s steps(150, end)
 }
 
-.mid, .footer-left, .footer-right {
+.mid, .footer-left, .footer-right, .footer-unified {
     background-color: #1d222f;
     border: 1px solid var(--cyan);
 }
@@ -158,27 +157,39 @@ hr {
     justify-content: space-between;
 }
 
-.footer-left, .footer-right {
+.footer-left, .footer-right, .footer-unified {
+    max-height: 16px;
     padding: 8px 12px;
 }
 
-.footer-left {
-    display: flex;
+.footer-left, .footer-right {
+    display: none;
 }
 
-.footer-left > a {
+.footer-left > a, .footer-unified > div > a {
     margin: 0 12px;
 }
 
-.footer-left > a > img {
+.footer-left > a > img, .footer-unified > div > a > img {
     display: block;
     height: 18px;
     filter: invert(100%);
     transition: filter .2s;
 }
 
-.footer-left > a:hover > img {
+.footer-left > a:hover > img, .footer-left > div > a:hover > img {
     filter: invert(100%) drop-shadow(0 0 4px rgba(247, 251, 255, 0.4));
+}
+
+.footer-unified {
+    width: 100%;
+    max-height: 48px;
+}
+
+.icon-links-unified {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
 }
 
 .blog-posts-count {
@@ -247,11 +258,7 @@ hr {
 .license {
     padding: 0 6px;
     margin: 0 auto;
-}
-
-.license > a > img {
-    vertical-align: middle;
-    padding: 0 0 2px;
+    text-align: center;
 }
 
 .mid, .post-content > p {
@@ -265,6 +272,7 @@ hr {
 
 .footnotes {
     color: var(--white);
+    overflow-x: auto;
 }
 
 ul > a > li::marker {
@@ -419,4 +427,18 @@ code {
 
 .notice.warning {
     border: 1px solid rgba(217,83,79,.9)!important;
+}
+
+@media screen and (min-width: 414px) {
+    .footer-left {
+        display: flex;
+    }
+
+    .footer-right {
+        display: block;
+    }
+
+    .footer-unified {
+        display: none;
+    }
 }
