@@ -214,7 +214,6 @@ hr {
 .blog-main-buttons-list > li > a {
     display: inline-block;
     padding: 4px;
-    min-width: 80px;
     background-color: #333;
     border: solid 1px #aaa;
 }
@@ -310,13 +309,14 @@ a:hover > .post-title {
 .list-categories, .list-tags, .post-categories, .post-tags {
     list-style: none;
     margin: 0;
+    margin-top: -4px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
 .list-categories > li, .list-tags > li {
-    margin: 0 4px 8px 0;
+    margin: 4px 4px 8px 0;
 }
 
 .list-categories > li > a, .list-tags > li > a, .post-categories > li > a, .post-tags > li > a {
@@ -342,7 +342,7 @@ a:hover > .post-title {
 }
 
 .post-categories > li, .post-tags > li {
-    margin: 0 4px 4px 0;
+    margin: 4px 4px 4px 0;
 }
 
 .post-categories {
@@ -352,6 +352,7 @@ a:hover > .post-title {
 .post-date {
     margin-top: auto;
     color: #edffff;
+    text-align: right;
 }
 
 .post-content {
@@ -440,5 +441,9 @@ code {
 
     .footer-unified {
         display: none;
+    }
+
+    .blog-main-buttons-list > li > a {
+        min-width: 80px;
     }
 }
