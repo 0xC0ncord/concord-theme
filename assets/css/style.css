@@ -39,7 +39,7 @@ body {
     background: #444 !important;
 }
 
-h1 {
+.title {
     font-family: "Terminus";
     font-size: 3em;
     width: max-content;
@@ -52,22 +52,14 @@ h1 {
     animation: cursorfadeslow 1s infinite;
 }
 
-h3 {
+.subtitle {
     font-family: "Terminus";
     max-width: 600px;
     height: 120px;
     margin: 0 auto;
     color: var(--white);
     text-align: center;
-}
-
-.subtitle {
     animation: 0.1s ease-in 0s 1 subtitleLoad;
-}
-
-h2 {
-    margin-top: 0;
-    color: var(--white);
 }
 
 a, a:visited {
@@ -290,6 +282,11 @@ ul > a > li::marker {
 
 .post-list > li > a > .post-title {
     margin-bottom: 8px;
+}
+
+.mid > h2:first-child, .post-title {
+    margin-top: 0;
+    color: var(--white);
 }
 
 .post-title {
