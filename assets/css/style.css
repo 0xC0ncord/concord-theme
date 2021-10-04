@@ -375,6 +375,9 @@ li > .post-title:hover {
 
 .tooltip {
     position: relative;
+}
+
+span.tooltip {
     border-bottom: var(--white) dashed 1px;
 }
 
