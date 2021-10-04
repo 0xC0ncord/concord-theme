@@ -1,6 +1,8 @@
 :root {
     --white: #f2f7ff;
     --cyan: #5dcff4;
+    --gray: #333;
+    --light-gray: #666;
 }
 
 body {
@@ -101,7 +103,7 @@ hr {
     width: 120px;
     margin: 0 auto;
     cursor: pointer;
-    background-color: #333;
+    background-color: var(--gray);
     border: solid 1px #aaa;
 }
 .nav > a > p {
@@ -210,7 +212,7 @@ hr {
 .blog-main-buttons-list > li > a {
     display: inline-block;
     padding: 4px;
-    background-color: #333;
+    background-color: var(--gray);
     border: solid 1px #aaa;
 }
 
@@ -223,7 +225,7 @@ hr {
 }
 
 .blog-main-buttons-list > li > a:hover, .pagination > li > a:hover {
-    background-color: #666;
+    background-color: var(--light-gray);
     color: #fff;
     text-shadow: 0 0 4px rgba(247, 251, 255, 0.4);
 }
@@ -238,7 +240,7 @@ hr {
 
 .pagination > li {
     margin: 0 4px;
-    background-color: #333;
+    background-color: var(--gray);
     border: solid 1px #aaa;
     min-width: 12px;
     text-align: center;
@@ -336,7 +338,7 @@ a:hover > .post-title {
 
 .list-categories > li > a:hover, .list-tags > li > a:hover, .post-categories > li > a:hover, .post-tags > li > a:hover {
     color: #fff;
-    background-color: #666;
+    background-color: var(--light-gray);
     text-shadow: none;
 }
 
