@@ -164,11 +164,11 @@ hr {
     display: none;
 }
 
-.footer > div > div {
+.footer-left > div {
     margin: 0 12px;
 }
 
-.footer > div > div > a > img {
+.footer-left > div > a > img, .icon-links-unified > div > a > img {
     display: block;
     height: 18px;
     filter: invert(100%);
@@ -187,7 +187,11 @@ hr {
 .icon-links-unified {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 16px;
+    margin: 0 12px 16px;
+}
+
+.license-unified {
+    text-align: center;
 }
 
 .blog-posts-count {
