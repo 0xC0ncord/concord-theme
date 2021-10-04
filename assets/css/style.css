@@ -396,18 +396,28 @@ li > .post-title:hover {
 
 .tooltip:hover .tooltip-text {
     opacity: 1;
+    pointer-events: initial;
 }
 
-.tooltip .tooltip-text::after {
+.tooltip .tooltip-text::before, .tooltip .tooltip-text::after {
     content: "";
     position: absolute;
     z-index: 1;
     top: 100%;
     left: 50%;
+}
+
+.tooltip .tooltip-text::after {
     margin-left: -8px;
     border-width: 8px;
     border-style: solid;
     border-color: var(--white) transparent transparent transparent;
+}
+
+.tooltip .tooltip-text::before {
+    width: calc(100% - 14px);
+    border: transparent solid 8px;
+    transform: translateX(-50%);
 }
 
 .highlight > pre {
