@@ -164,11 +164,11 @@ hr {
     display: none;
 }
 
-.footer-left > a, .footer-unified > div > a {
+.footer > div > div {
     margin: 0 12px;
 }
 
-.footer-left > a > img, .footer-unified > div > a > img {
+.footer > div > div > a > img {
     display: block;
     height: 18px;
     filter: invert(100%);

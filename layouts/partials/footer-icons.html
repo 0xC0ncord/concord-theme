@@ -1,0 +1,32 @@
+<div>
+    <a href="/posts/index.xml">
+        <img src="/img/rss.svg">
+    </a>
+</div>
+<div>
+    <a href="https://github.com/{{ .context.Site.Params.GithubUser }}">
+        <img src="/img/github.svg">
+    </a>
+</div>
+<div>
+    <a href="https://matrix.to/#/{{ .context.Site.Params.MatrixUser }}">
+        <img src="/img/matrix.svg">
+    </a>
+</div>
+<div>
+    <a href="mailto:{{ .context.Site.Params.AuthorEmail }}">
+        <img src="/img/email.svg">
+    </a>
+</div>
+<div class="tooltip">
+    <a href="{{ .context.Site.Params.BTCAddressImgPath }}">
+        <img src="/img/btc.svg">
+    </a>
+    <div class="tooltip-text">{{ .context.Site.Params.BTCAddress }}</div>
+</div>
+<div class="tooltip">
+    <a href="{{ .context.Site.Params.XMRAddressImgPath }}">
+        <img src="/img/xmr.svg">
+    </a>
+    <div class="tooltip-text">{{ .context.Site.Params.XMRAddress }}</div>
+</div>
