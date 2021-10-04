@@ -6,9 +6,14 @@
 }
 
 body {
-    overflow-x: hidden;
+    margin: 0;
     background-color: #0f0f12;
     font-family: "Open Sans";
+}
+
+.wrapper-outer {
+    overflow-x: hidden;
+    padding: 8px;
 }
 
 .wrapper {
