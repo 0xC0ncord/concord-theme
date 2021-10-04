@@ -373,6 +373,43 @@ li > .post-title:hover {
     margin-top: 24px;
 }
 
+.tooltip {
+    position: relative;
+    border-bottom: var(--white) dashed 1px;
+}
+
+.tooltip .tooltip-text {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px;
+    text-align: center;
+    background: var(--gray);
+    border: var(--white) solid 1px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+}
+
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: var(--white) transparent transparent transparent;
+}
+
 .highlight > pre {
     padding: 16px;
     border: #fff2 solid 1px;
