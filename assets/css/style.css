@@ -303,7 +303,6 @@ ul > a > li::marker {
     transition: text-shadow 0.2s;
     font-size: 1.5em;
     font-weight: bold;
-    margin: 0 0 8px;
     color: var(--white);
 }
 
@@ -313,6 +312,7 @@ li > .post-title:hover {
 }
 
 .post-meta {
+    margin-top: 8px;
     display: flex;
     justify-content: space-between;
 }
