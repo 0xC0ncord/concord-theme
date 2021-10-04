@@ -6,12 +6,14 @@
 </div>
 <div class="nav">
     {{ range (where .Site.Pages.ByWeight ".Type" "page") }}
-        {{ if eq $.File .File }}
-            <a class="tty" href="#">
-        {{ else }}
-            <a class="tty" href="{{ .Permalink }}">
+        {{ if not .Params.hidden }}
+            {{ if eq $.File .File }}
+                <a class="tty" href="#">
+            {{ else }}
+                <a class="tty" href="{{ .Permalink }}">
+            {{ end }}
+                <p>{{ upper .Title }}</p>
+            </a>
         {{ end }}
-            <p>{{ upper .Title }}</p>
-        </a>
     {{ end }}
 </div>
