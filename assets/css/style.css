@@ -384,13 +384,14 @@ span.tooltip {
 .tooltip .tooltip-text {
     position: absolute;
     z-index: 1;
-    width: 100%;
-    bottom: 120%;
+    bottom: calc(100% + 8px);
     left: 50%;
     transform: translateX(-50%);
+    width: max-content;
     padding: 4px;
     text-align: center;
     background: var(--gray);
+    color: var(--white);
     border: var(--white) solid 1px;
     opacity: 0;
     transition: opacity 0.3s;
@@ -418,6 +419,7 @@ span.tooltip {
 }
 
 .tooltip .tooltip-text::before {
+    top: calc(100% - 8px);
     width: calc(100% - 14px);
     border: transparent solid 8px;
     transform: translateX(-50%);
