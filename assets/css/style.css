@@ -414,11 +414,11 @@ code {
 }
 
 .notice.note, .notice.info, .notice.tip, .notice.warning {
-    background: #2e2e2e!important;
+    background: #272822!important;
 }
 
 .notice-title ~ p {
-    color: #ddd!important;
+    color: var(--white)!important;
 }
 
 .notice.note {
