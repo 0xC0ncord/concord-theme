@@ -358,7 +358,7 @@ a:hover > .post-title {
 
 .post-date {
     margin-top: auto;
-    color: #edffff;
+    color: var(--white);
     text-align: right;
 }
 
