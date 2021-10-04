@@ -293,18 +293,23 @@ ul > a > li::marker {
     margin-bottom: 8px;
 }
 
-.mid > h2:first-child, .post-title {
+.mid > h2:first-child {
     margin-top: 0;
     color: var(--white);
 }
 
-.post-title {
+.post-title, .post-title:visited {
     text-shadow: none;
     transition: text-shadow 0.2s;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 8px;
+    color: var(--white);
 }
-a:hover > .post-title {
+
+li > .post-title:hover {
     text-shadow: 0 0 4px rgba(247, 251, 255, 0.4);
-    transition: text-shadow 0.2s;
+    color: var(--white);
 }
 
 .post-meta {
