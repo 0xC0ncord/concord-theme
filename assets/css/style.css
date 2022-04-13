@@ -396,9 +396,10 @@ span.tooltip {
     bottom: calc(100% + 8px);
     left: 50%;
     transform: translateX(-50%);
-    width: max-content;
+    max-width: 430px;
     padding: 4px;
     text-align: center;
+    overflow-wrap: break-word;
     background: var(--gray);
     color: var(--white);
     border: var(--white) solid 1px;
