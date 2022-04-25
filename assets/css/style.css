@@ -180,7 +180,7 @@ hr {
     transition: filter .2s;
 }
 
-.footer-left > a:hover > img, .footer-left > div > a:hover > img {
+.footer-left > a:hover > img, .footer-left > div > a:hover > img, .mid > h2:first-child + a:hover > img {
     filter: invert(100%) drop-shadow(0 0 4px rgba(247, 251, 255, 0.4));
 }
 
@@ -303,8 +303,19 @@ ul > a > li::marker {
 }
 
 .mid > h2:first-child {
-    margin-top: 0;
+    display: inline-block;
+    margin: 0;
     color: var(--white);
+}
+
+.mid > h2:first-child + a {
+    margin-left: 10px;
+}
+
+.mid > h2:first-child + a > img {
+    height: 18px;
+    filter: invert(100%);
+    transition: filter .2s;
 }
 
 .post-title, .post-title:visited {
