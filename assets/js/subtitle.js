@@ -6,7 +6,16 @@ function randomize() {
         "Have you made a backup today?",
         "My secret ingredient is undefined behavior.",
         "<em>thicc</em> clients",
-        "setcap > suid > USER_NS"
+        "setcap > suid > USER_NS",
+        "SELinux-aware since 2020.",
+        "Universally unique!",
+        "-ng",
+        "Cawfee",
+        "Better than Postal 3!",
+        "Now with gaps!",
+        "Safe for work!",
+        "Syntax highlighting free with every purchase!",
+        "Water soluble!"
     );
     document.getElementById("subtitle").innerHTML = subtitles[Math.floor(Math.random() * subtitles.length)];
 }
