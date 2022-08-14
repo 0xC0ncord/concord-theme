@@ -502,19 +502,19 @@ code {
 }
 
 .notice.note {
-    border: 1px solid #6ab0de!important;
+    border: 1px solid var(--note-title);
 }
 
 .notice.info {
-    border: 1px solid #f0b37e!important;
+    border: 1px solid var(--info-title);
 }
 
 .notice.tip {
-    border: 1px solid rgba(92,184,92,.8)!important;
+    border: 1px solid var(--tip-title);
 }
 
 .notice.warning {
-    border: 1px solid rgba(217,83,79,.9)!important;
+    border: 1px solid var(--warning-title);
 }
 
 @media screen and (min-width: 414px) {
