@@ -15,7 +15,8 @@ function randomize() {
         "Now with gaps!",
         "Safe for work!",
         "Syntax highlighting free with every purchase!",
-        "Water soluble!"
+        "Water soluble!",
+        "WARNING: This blog contains chemicals known to the state of California to cause cancer or other reproductive harm."
     );
     document.getElementById("subtitle").innerHTML = subtitles[Math.floor(Math.random() * subtitles.length)];
 }
